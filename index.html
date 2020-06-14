@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<style>
+    body{
+        background-color: rgb(248, 248, 212);
+    }
+
+    header{
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-left{
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-right{
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 800px;
+        justify-content: center;
+    }
+
+    h1{
+        color: darkcyan;
+        font-family:'Courier New', Courier, monospace
+    }
+
+    div{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .search-buttons{
+        width: 500px;
+        display: flex;
+        margin: 1em;
+        justify-content: space-evenly;
+    }
+</style>
+<head>
+    <title>My google homepage attempt</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="link goes nowhere">About</a>
+            <a href="link goes nowhere">Store</a>
+        </div>
+        <div class="header-right">
+            <a href="link goes nowhere">Gmail</a>
+            <a href="link goes nowhere">Images</a>
+            <button class="signin">
+                <label for="signinbutton">Sign In</label>
+                <input type="button" id="signinbutton" name="signinbutton">
+            </button>
+        </div>
+
+    </header>
+    <main>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+        <div>
+            <label for="searchbox">Search</label>
+            <input type="text" id="searchbox" name="searchbox">
+         </div>
+         <div class="search-buttons">
+             <label for="searchthis">Google Search</label>
+             <input type="button" id="searchthis" name="searchthis">
+             <label for="luckysearch">Feeling lucky!</label>
+             <input type="button" id="luckysearch" name="luckysearch">
+         </div>
+   </main>
+    
+</body>
